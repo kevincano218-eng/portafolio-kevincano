@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.titulo-principal{
+    text-align: center;
+    
+    color: #292a2b;   
+}
+
+.contenedor{
+ max-width: 1000px;      /* limita el ancho máximo */
+  margin: 40px auto;     /* 40px arriba y abajo, centrado horizontalmente */
+  padding: 50px;         /* espacio interno dentro del contenedor */
+  background-color: rgba(177, 172, 172, 0.918);
+  border-radius: 30px;   /* esquinas redondeadas (opcional) */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
