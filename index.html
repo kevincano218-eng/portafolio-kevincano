@@ -5,50 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <style>
+        table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    
+
+     th, td {
+      border: 1px solid #dddddd00;
+      padding: 10px;
+      text-align: left;
+      font-family: 'Forum', serif;
+    }
+
+    a:hover {
+      text-decoration: underline;}
+
+      th {
+        
+      background-color: #afada841 ;
+    border-radius: 15px;
+}
+.enlace {
+      display: none;
+      margin-top: 5px;
+    }
+
+    /* Nombre del proyecto clickeable */
+    .proyecto {
+      cursor: pointer;
+      color: #2a2a2a;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .proyecto:hover {
+      color: #0077cc;
+    }
+    </style>
+    
 </head>
 <body>
-    <div class="contenedor">
-    <h1 class="titulo-principal">Portafolio de Kevin</h1>
-    <h2 style="text-align: center;">Proyectos PYTHON</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Proyecto</th>
-                <th>Enlace</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <tr><h3>Proyectos Robinson</h3></tr>
 
-                <td>M1_python__actividad_1</td>
-                <td><a href="https://github.com/kevincano218-eng/M1_python__actividad_1" target="_blank">Ver en GitHub</a></td>
-                <tr><td>M1_python__actividad_2</td>
-                <td><a href="https://github.com/kevincano218-eng/M1_python__actividad_2" target="_blank">Ver en GitHub</a></td></tr>
-            </tr>
-            <tr>
-            
-                <tr><td><h3>Proyectos de moodle</h3></td></tr>
-                <td>M1_python_moodle_week_1</td>
-                <td><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_1" target="_blank">Ver en GitHub</a></td>
-            </tr>
-        </tbody>
-    </table>
-    <h2 style="text-align: center;">Proyectos HTML</h2>
+  <div class="contenedor">
+    <img src="./2475ad_a6a3473ca31d4a779327b37d9909ce22~mv2.avif" alt="" height="90px">
+
+    <h1 class="titulo-principal">Portafolio de Kevin</h1>
+
+    <h2>Proyectos PYTHON</h2>
+
+    <h3>Proyectos Robinson</h3>
     <table>
-        <thead>
-            <tr>
-                <th>Proyecto</th>
-                <th>Enlace</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hoja de vida</td>
-                <td><a href="https://github.com/kevincano218-eng/hoja" target="_blank">Ver en GitHub</a></td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Proyecto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="proyecto" onclick="mostrarEnlace('enlace1')">M1_python__actividad_1</div>
+            <div id="enlace1" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_1" target="_blank">Ver en GitHub</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="proyecto" onclick="mostrarEnlace('enlace2')">M1_python__actividad_2</div>
+            <div id="enlace2" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_2" target="_blank">Ver en GitHub</a></div>
+          </td>
+        </tr>
+      </tbody>
     </table>
-    </div>
+
+    <h3>Proyectos de Moodle</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Proyecto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="proyecto" onclick="mostrarEnlace('enlace3')">M1_python_moodle_week_1</div>
+            <div id="enlace3" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_1" target="_blank">Ver en GitHub</a></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Proyectos HTML</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Proyecto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="proyecto" onclick="mostrarEnlace('enlace4')">Hoja de vida</div>
+            <div id="enlace4" class="enlace"><a href="https://github.com/kevincano218-eng/hoja" target="_blank">Ver en GitHub</a></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Script para mostrar/ocultar enlaces -->
+  <script>
+    function mostrarEnlace(id) {
+      const enlace = document.getElementById(id);
+      enlace.style.display = (enlace.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
 </body>
 </html>

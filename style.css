@@ -1,22 +1,26 @@
 body{
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Forum', serif;
+  background-image: url(./mes-herencia-griega-americana-fondo-ilustraciones-columnas-griegas-espacio-copia-minimalista-sencillo_499817-1698.avif);
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen a toda la pantalla */
+  background-attachment: fixed; /* 🔹 Hace que la imagen quede estática */
+  color: #292a2b;
+  margin: 0;
+  padding: 0;
 
 }
 
 .titulo-principal{
+    font-family: 'Cinzel Decorative', serif;
     text-align: center;
     
-    color: #292a2b;   
+    
 }
 
 .contenedor{
- max-width: 1000px;      /* limita el ancho máximo */
+ max-width: 800px;      /* limita el ancho máximo */
   margin: 40px auto;     /* 40px arriba y abajo, centrado horizontalmente */
   padding: 50px;         /* espacio interno dentro del contenedor */
-  background-color: rgba(177, 172, 172, 0.918);
-  border-radius: 30px;   /* esquinas redondeadas (opcional) */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  
   }
