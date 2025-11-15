@@ -1,15 +1,16 @@
 body{
-    font-family: 'Forum', serif;
-  background-image: url(./mes-herencia-griega-americana-fondo-ilustraciones-columnas-griegas-espacio-copia-minimalista-sencillo_499817-1698.avif);
-  background-position: center center; /* Centra la imagen */
-  background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen a toda la pantalla */
-  background-attachment: fixed; /* 🔹 Hace que la imagen quede estática */
-  color: #292a2b;
-  margin: 0;
-  padding: 0;
+font-family: 'Forum', serif;
+background-image: url(./mes-herencia-griega-americana-fondo-ilustraciones-columnas-griegas-espacio-copia-minimalista-sencillo_499817-1698.avif);
+background-position: center center; /* Centra la imagen */
+background-repeat: no-repeat;
+background-size: cover; /* Ajusta la imagen a toda la pantalla */
+background-attachment: fixed; /* 🔹 Hace que la imagen quede estática */
+color: #292a2b;
+margin: 0;
+padding: 0;
 
 }
+
 
 .titulo-principal{
     font-family: 'Cinzel Decorative', serif;
@@ -19,8 +20,55 @@ body{
 }
 
 .contenedor{
- max-width: 800px;      /* limita el ancho máximo */
-  margin: 40px auto;     /* 40px arriba y abajo, centrado horizontalmente */
-  padding: 50px;         /* espacio interno dentro del contenedor */
-  
+max-width: 800px;      /* limita el ancho máximo */
+margin: 40px auto;     /* 40px arriba y abajo, centrado horizontalmente */
+padding: 50px;         /* espacio interno dentro del contenedor */
+border-radius: 50px;
+; 
+}
+
+.pergamino {
+width: 800px;
+margin: 50px auto;
+padding: 40px;
+
+background-image: url("./8837a69bcf30bd8a428f9b6bb9d22e48.jpg"); 
+background: rgba(226, 170, 67, 0.205); /* blanco semitransparente */
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+overflow: hidden;        
+transform-origin: top;   
+animation: abrirPergamino 2s ease-out forwards;
+border-radius: 30px;
+}
+
+
+.contenido {
+opacity: 0;
+animation: mostrarContenido 1.2s ease-out forwards;
+animation-delay: 0.30s;   
+}
+
+
+@keyframes abrirPergamino {
+    0% {
+    transform: scaleY(0);  
+} 
+  100% {
+    transform: scaleY(1);  
+}
+}
+
+
+@keyframes mostrarContenido {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
