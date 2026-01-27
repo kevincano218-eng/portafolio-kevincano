@@ -11,6 +11,44 @@ padding: 0;
 
 }
 
+table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+
+    th,
+    td {
+      border: 1px solid #dddddd00;
+      padding: 10px;
+      text-align: left;
+      font-family: 'Forum', serif;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    th {
+
+      background-color: #afada841;
+      border-radius: 15px;
+    }
+
+    .enlace {
+      display: none;
+      margin-top: 5px;
+    }
+
+    /* Nombre del proyecto clickeable */
+    .proyecto {
+      cursor: pointer;
+      color: #2a2a2a;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
 
 .titulo-principal{
     font-family: 'Cinzel Decorative', serif;
@@ -71,4 +109,34 @@ animation-delay: 0.30s;
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Ocultar secciones por defecto */
+.seccion-oculta {
+    display: none;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Estilo para que los títulos parezcan botones */
+.titulo-desplegable, .subtitulo-desplegable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.titulo-desplegable:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #8b4513; /* Color café cuero */
+}
+
+.subtitulo-desplegable:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+/* Espaciado para que no se vea amontonado */
+h2 {
+    margin-top: 20px;
 }

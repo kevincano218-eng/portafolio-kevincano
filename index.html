@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,213 +7,136 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Forum&display=swap"
     rel="stylesheet">
-
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-
-
-    th,
-    td {
-      border: 1px solid #dddddd00;
-      padding: 10px;
-      text-align: left;
-      font-family: 'Forum', serif;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    th {
-
-      background-color: #afada841;
-      border-radius: 15px;
-    }
-
-    .enlace {
-      display: none;
-      margin-top: 5px;
-    }
-
-    /* Nombre del proyecto clickeable */
-    .proyecto {
-      cursor: pointer;
-      color: #2a2a2a;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-  </style>
-
 </head>
 
 <body>
   <div class="pergamino">
-    <div class="contenido">
-      <div class="fondo-pergamino"></div>
+  <div class="contenido">
+    <div class="fondo-pergamino"></div>
 
-      <div class="contenedor">
-        <img src="./2475ad_a6a3473ca31d4a779327b37d9909ce22~mv2.avif" alt="" height="90px">
+    <div class="contenedor">
+      <img src="./2475ad_a6a3473ca31d4a779327b37d9909ce22~mv2.avif" alt="" height="90px">
+      <h1 class="titulo-principal">KEVIN CANO</h1>
 
-        <h1 class="titulo-principal">KEVIN CANO</h1>
-
-        <h1>Proyectos Robinson</h1>
-
+      <h1 class="titulo-desplegable" onclick="toggleSeccion('seccion-robinson')">Proyectos Robinson</h1>
+      
+      <div id="seccion-robinson" class="seccion-oculta">
         <table>
-    
           <tbody>
             <tr>
               <td>
-                <h2>PYTHON</h2>
-                <div class="proyecto" onclick="mostrarEnlace('enlace1')">M1_python__actividad_1</div>
-                <div id="enlace1" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_1"
-                    target="_blank">Ver en GitHub</a></div>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('py-rob')">PYTHON</h2>
+                <div id="py-rob" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace1')">M1_python__actividad_1</div>
+                  <div id="enlace1" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_1" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace2')">M1_python__actividad_2</div>
+                  <div id="enlace2" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_2" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace3')">M1_python__actividad_3</div>
+                  <div id="enlace3" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_3" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace4')">M1_python__actividad_4</div>
+                  <div id="enlace4" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_4" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace9')">M1_python__actividad_5</div>
+                  <div id="enlace9" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_5" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace10')">M1_python__actividad_6</div>
+                  <div id="enlace10" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_6" target="_blank">Ver en GitHub</a></div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('html-rob')">HTML</h2>
+                <div id="html-rob" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace17')">M2_html__actividad_1</div>
+                  <div id="enlace17" class="enlace"><a href="#" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace18')">M2_html__actividad_2</div>
+                <p>Primer trabajo de trenes (Neo-comics)</p>
+                <div id="enlace18" class="enlace"><a href="https://github.com/kevincano218-eng/M2_html__actividad_2" target="_blank">Ver en GitHub</a></div>
+                </div>
               </td>
             </tr>
 
             <tr>
               <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace2')">M1_python__actividad_2</div>
-                <div id="enlace2" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_2"
-                    target="_blank">Ver en GitHub</a></div>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('javascript-rob')">JAVASCRIPT</h2>
+                <div id="javascript-rob" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace12')">M3_javascript__actividad_1</div>
+                <div id="enlace12" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript__actividad_1" target="_blank">Ver en GitHub</a></div>
+                  <div class="proyecto" onclick="mostrarEnlace('enlace13')">M3_javascript__actividad_2</div>
+                <div id="enlace13" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript__actividad_2" target="_blank">Ver en GitHub</a></div>
+                <div class="proyecto" onclick="mostrarEnlace('enlace16')">M3_javascript__actividad_3</div>
+                <div id="enlace16" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript__actividad_3" target="_blank">Ver en GitHub</a></div>
+                </div>
               </td>
             </tr>
-
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace3')">M1_python__actividad_3</div>
-                <div id="enlace3" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_3"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace4')">M1_python__actividad_4</div>
-                <div id="enlace4" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_4"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace9')">M1_python__actividad_5</div>
-                <div id="enlace9" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_5"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace10')">M1_python__actividad_6</div>
-                <div id="enlace10" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python__actividad_6"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td>
-                <h2>HTML</h2>
-                <div class="proyecto" onclick="mostrarEnlace('enlace10')">M2_html__actividad_1</div>
-                <div id="enlace10" class="enlace"><a href=""
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h2>JAVASCRIPT</h2>
-                    <div class="proyecto" onclick="mostrarEnlace('enlace12')">M3_javascript__actividad_1</div>
-                <div id="enlace12" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript__actividad_1"
-                    target="_blank">Ver en GitHub</a></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="proyecto" onclick="mostrarEnlace('enlace13')">M3_javascript__actividad_2</div>
-                <div id="enlace13" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript__actividad_2"
-                    target="_blank">Ver en GitHub</a></div>
-                </td>
-            </tr>
-
           </tbody>
         </table>
-
-        <h1>Proyectos de Moodle</h1>
-        <table>
-          
-          <tbody>
-            <tr>
-              <td>
-                <h2>PYTHON</h2>
-                <div class="proyecto" onclick="mostrarEnlace('enlace5')">M1_python_moodle_week_1</div>
-                <div id="enlace5" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_1"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace6')">M1_python_moodle_week_2</div>
-                <div id="enlace6" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_2"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace7')">M1_python_moodle_week_3 </div>
-                <p>(prueba de desempeño)</p>
-                <div id="enlace7" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_3"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h2>HTML</h2>
-                <div class="proyecto" onclick="mostrarEnlace('enlace8')">M2_html_moodle_week_1-2-3</div>
-                <div id="enlace8" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_4"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            </tr>
-            <td>
-                <div class="proyecto" onclick="mostrarEnlace('enlace11')">M2_html_moodle_week_4 </div>
-                <p>(prueba de desempeño)</p>
-                <div id="enlace11" class="enlace"><a href="https://github.com/kevincano218-eng/prueba-de-desempe-o"
-                    target="_blank">Ver en GitHub</a></div>
-              </td>
-            <tr>
-                <td>
-                    <h2>JAVASCRIPT</h2>
-                    <div class="proyecto" onclick="mostrarEnlace('enlace14')">M3_javascript_moodle_week_1</div>
-                    <div id="enlace14" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript_moodle_week_1"
-                    target="_blank">Ver en GitHub</a></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="proyecto" onclick="mostrarEnlace('enlace15')">M3_javascript_moodle_week_2</div>
-                    <div id="enlace15" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript_moodle_week_2"
-                    target="_blank">Ver en GitHub</a></div>
-                </td>
-            </tr>
-
-          </tbody>
-        </table>
-
       </div>
 
-      <!-- Script para mostrar/ocultar enlaces -->
-      <script>
-        function mostrarEnlace(id) {
-          const enlace = document.getElementById(id);
-          enlace.style.display = (enlace.style.display === "block") ? "none" : "block";
-        }
-      </script>
+      <h1 class="titulo-desplegable" onclick="toggleSeccion('seccion-moodle')">Proyectos de Moodle</h1>
+      
+      <div id="seccion-moodle" class="seccion-oculta">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('py-mood')">PYTHON</h2>
+                <div id="py-mood" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace5')">M1_python_moodle_week_1</div>
+                <div id="enlace5" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_1" target="_blank">Ver en GitHub</a></div>
+                <div class="proyecto" onclick="mostrarEnlace('enlace6')">M1_python_moodle_week_2</div>
+                <div id="enlace6" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_2" target="_blank">Ver en GitHub</a></div>
+                <div class="proyecto" onclick="mostrarEnlace('enlace7')">M1_python_moodle_week_3 </div>
+                <p>(prueba de desempeño)</p>
+                <div id="enlace7" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_3" target="_blank">Ver en GitHub</a></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('html-mood')">HTML</h2>
+                <div id="html-mood" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace8')">M2_html_moodle_week_1-2-3</div>
+                <div id="enlace8" class="enlace"><a href="https://github.com/kevincano218-eng/M1_python_moodle_week_4"target="_blank">Ver en GitHub</a></div>
+                <div class="proyecto" onclick="mostrarEnlace('enlace11')">M2_html_moodle_week_4 </div>
+                <p>(prueba de desempeño)</p>
+                <div id="enlace11" class="enlace"><a href="https://github.com/kevincano218-eng/prueba-de-desempe-o" target="_blank">Ver en GitHub</a></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="subtitulo-desplegable" onclick="toggleSeccion('javascript-mood')">JAVASCRIPT</h2>
+                <div id="javascript-mood" class="seccion-oculta">
+                  <div class="proyecto" onclick="mostrarEnlace('enlace14')">M3_javascript_moodle_week_1</div>
+                    <div id="enlace14" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript_moodle_week_1" target="_blank">Ver en GitHub</a></div>
+                <div class="proyecto" onclick="mostrarEnlace('enlace15')">M3_javascript_moodle_week_2</div>
+                    <div id="enlace15" class="enlace"><a href="https://github.com/kevincano218-eng/M3_javascript_moodle_week_2" target="_blank">Ver en GitHub</a></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
     </div>
+
+    <script>
+      function toggleSeccion(id) {
+        const elemento = document.getElementById(id);
+        if (elemento.style.display === "block") {
+          elemento.style.display = "none";
+        } else {
+          elemento.style.display = "block";
+        }
+      }
+
+      function mostrarEnlace(id) {
+        const enlace = document.getElementById(id);
+        enlace.style.display = (enlace.style.display === "block") ? "none" : "block";
+      }
+    </script>
   </div>
+</div>
 
 </body>
-
 </html>
